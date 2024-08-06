@@ -23,7 +23,7 @@ function love.load()
 
     local newOBJ2 = GameObject:new()
     newOBJ2:move(500,500)
-    newOBJ2.active = false
+    newOBJ2.active = true
 
 
     

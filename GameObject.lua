@@ -6,13 +6,14 @@ local function setDefaults(o)
 o.active = true
 o.location = {x= 0, y=0}
 o.dimensions = {width = 10, height = 10}
+return o;
 
 end
 
 function GameObject:new(o) 
 
 o = o or {}
-setDefaults(o)
+o = setDefaults(o)
 
 setmetatable(o,{__index = GameObject})
 table.insert(Draw.objList,o)
